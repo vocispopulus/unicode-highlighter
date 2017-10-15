@@ -1,0 +1,18 @@
+{
+  "manifest-version": 2,
+  "name": "Unicode Highlighter",
+  "version": "0.1.0",
+
+  "description": "Highlight unicode confusables",
+
+  "icons":{
+    "48": "icons/highlight-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*"],
+      "js": ["highlighter.js"]
+    }
+  ]
+}
